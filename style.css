@@ -1,0 +1,333 @@
+body{
+     margin:0;
+     display: flex;
+     flex-direction: column;
+}
+header{
+       /*position:fixed;
+       top:0%;
+       width: 100%;*/
+       position: sticky;
+       top:0%; 
+       height: 5rem;
+       background-color:#8f9e81;
+       text-align: center;
+       align-content: center;
+       color:#8f8270;
+       border-bottom: solid 2px #8f8270;
+       font-family: 'Clash Display', sans-serif;
+       font-weight: 900;
+       font-style: normal;
+       font-size:200%;
+}
+
+.subheader{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: stretch;
+}
+.sidebar{
+       /*position:fixed;
+       left:0%;
+       top:0%;*/
+       /* height: 50rem;   */
+       background-color: #abb6cb;
+       width: 15rem;      
+       text-align: center;
+       color:#5d7599;
+       font-family: "Forum", serif;
+       font-weight: 600;
+       font-style: normal;
+}
+.sidebar .sub-menu{
+     display: none;
+}
+.sidebar .sub-menu-1{
+     display: none;
+}
+[id^=btn]:checked + .sub-menu{
+     display: block;
+}
+[id^=btn-1]:checked + .sub-menu-1{
+     display: block;
+}
+ .drop{
+     display: flex;
+     align-items: stretch;
+     justify-content: center;  
+} 
+.sidebar label a{
+     text-decoration: none;
+     color:#5d7599;
+     
+}
+.sidebar div:not(.menu-click),
+.sidebar label{
+    padding: 15px 0px;
+    border-bottom: solid #dadada 1px;
+}
+.sidebar .sub-menu{
+     padding: 0;
+}
+.sidebar .sub-menu-1
+{
+     padding: 0;
+}
+.sidebar a{
+     text-decoration: none;
+     color:#5d7599;
+     
+}
+
+.sidebar div:hover:not(.active),
+.sidebar label:hover:not(.active){ 
+     background-color:#dadada;
+     color:#abb6cb;
+}
+
+.menu-click:hover:not(.active){
+     color:#abb6cb;
+}
+.active{
+     background-color:#c2c4b6 ;
+     color:#f7f0c6;
+}
+
+input{
+     display: none;
+}
+.continut{
+    padding: 20px;
+    background-color: #ece8df;
+    width: 100%;
+    color: #90553c;
+}
+.continut h2,h3{
+     color:#895d2b;
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 700;
+     font-style: normal;
+}
+
+.def{
+     border-style:solid;
+     border-color: #404e4a;
+     border-radius: 20px;
+     padding-left: 15px;
+     display: flex;
+     height: 7rem;
+     justify-content: space-between;
+
+}
+.af-def{
+     display: inline; 
+     border-style: none;
+     padding: 0;
+     background-color: transparent;
+     color:#90553c;
+     font-family: "Jost", sans-serif;
+     font-optical-sizing: auto;
+     font-weight:500;
+     font-size: inherit;
+     font-style: normal;
+     cursor:pointer;
+}
+#graf-def{
+     padding: 0;
+     margin: 0;
+     position: absolute;
+     top: 385px;
+     justify-self: center;
+     align-items: center;
+     border-style:solid;
+     border-color: #8f8270;
+     border-width: 1px;
+     background-color: rgba(255, 255, 255, 0.4);
+     backdrop-filter: blur(5px);
+     height: 50px;
+     color:#90553c;
+}
+
+.arb-def{
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border-left-style: solid;
+     border-left-color:#404e4a;
+}
+.ex-img{
+      display:flex;
+      justify-content: space-evenly;
+}
+.ex-img div{
+      border-style: solid;
+      border-color: #404e4a;
+      border-width: 2px;
+      
+} 
+/* .ex-img div :nth-last-child(){
+     background-color: #404e4a;
+     border-style: solid;
+     border-radius: 20px;
+     color:white;
+}   */
+.mai-multe-flex{
+     display: flex;
+} 
+.mai-multe{
+     background-color: #404e4a;
+     border-style: solid;
+     border-radius: 18px;
+     color:white;
+     align-self: center;
+}
+.mai-multe a{
+     text-decoration: none;
+     color:white;
+}
+.ex-img div img{
+      height: 10rem;
+     
+} 
+.ex-img div p{
+     border-top-style: solid;
+     border-top-color: #404e4a;
+     border-top-width: 2px;
+     text-align: center;
+} 
+p,ul{
+     font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.legenda-arb-rad{
+     display: flex;
+     border: solid #895d2b 3px;
+     border-radius: 15px;
+}
+.legenda-arb-rad img:first-of-type{
+     border-right: solid #895d2b 3px;
+     padding: 5px;
+}
+.legenda-arb-rad div{
+     padding: 5px;
+}
+.legenda-arb-rad ul li{
+     list-style:circle;
+     margin: 7px;
+}
+.legenda-arb-rad img:last-of-type{
+     border-left: solid #895d2b 3px;
+     padding: 5px;
+     width: 37%;
+}
+
+p::selection,
+h2::selection,
+h3::selection,
+ul::selection,
+li::selection{
+     background-color:#c2c4b6 ;
+     color:#f7f0c6;
+}
+.vect-tati{
+     display: flex;
+}
+.lista-vect-tati{
+     list-style:none;
+}
+
+.intro-tipuri{
+     border: solid #895d2b 2px;
+     border-radius: 25px;
+     padding:5px;
+}
+.tip-titlu{
+     text-align: center;
+}
+.tip-titlu-img{
+     display: flex;
+     justify-content: center;
+}
+.tip-titlu-img img{
+     width: 50%;
+}
+/*#80BEAF
+#B3DDD1
+#D1DCE2
+#F5B994
+#EE9C6C
+#b49578
+#e9b57c
+#ece8df
+#8f8270-a fost la header
+
+fonturi faine-elsie si julius
+*/
+/* .ubuntu-light {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 300;
+     font-style: normal;
+   }
+   
+   .ubuntu-regular {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+   }
+   
+   .ubuntu-medium {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 500;
+     font-style: normal;
+   }
+   
+   .ubuntu-bold {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 700;
+     font-style: normal;
+   }
+   
+   .ubuntu-light-italic {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 300;
+     font-style: italic;
+   }
+   
+   .ubuntu-regular-italic {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 400;
+     font-style: italic;
+   }
+   
+   .ubuntu-medium-italic {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 500;
+     font-style: italic;
+   }
+   
+   .ubuntu-bold-italic {
+     font-family: "Ubuntu", sans-serif;
+     font-weight: 700;
+     font-style: italic;
+   } */
+
+   /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.jost-<uniquifier> {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+   
+/* .forum-regular {
+     font-family: "Forum", serif;
+     font-weight: 400;
+     font-style: normal;
+   } */
+   
+
+   /* https://www.geeksforgeeks.org/tree-data-structure/ */

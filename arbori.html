@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Arbori</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Forum&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <header>Arbori</header>
+    <div class="subheader">
+        <div class="continut">
+            <h2>Scurt istoric</h2>
+            <p>Teoria matematică a arborilor a fost discutată pentru prima dată de Cayley în 1857. El a reușit să găsească formule de recursivitate pentru numărarea numărului de arbori sau arbori cu rădăcină, având un număr finit de vârfuri, unde numărul de ramuri la un vârf nu era limitat.Nu există aproape niciun domeniu științific de interes în care „arborii lui Cayley” să nu fie folosiți ca instrument de sistematizare, cel puțin implicit. Manifestări ale unor astfel de „arbori” pot fi găsite în aplicații tehnologice, precum și în lingvistică sau sociologie.În prezent, arborii sunt peste tot în informatică. Sunt atât de răspândite încât s-au încorporat în rădăcinile codului nostru.</p>
+             <div class="def">
+                 <div>
+                     <h2  id="1">Definiție</h2>
+                     <p popover id="graf-def">Se numește graf G=(X,U) o pereche de mulțimi X,U ,unde X este mulțimea nodurilor și U poartă numele de mulțimea muchiilor.<br>Se numește graf conex, un graf în care între oricare două noduri există cel puțin un lanț.<br>Se numește lanț o succesiune de noduri cu proprietatea că oricare două noduri alăturate în lanț sunt adiacente.<br>Se numește ciclu într-un graf un lanț închis(extremitățile sunt identice).</p>
+                     <p>Se numește arbore un <input class="af-def" type="button" popovertarget="graf-def" value="graf neorientat"> conex și fără cicluri.</p>
+                 </div>
+                 <img src="./images/Captură de ecran 2024-06-06 102538.png" class="arb-def">
+             </div>
+             <br>
+             <br>
+             <br>
+             <h2>Observații</h2>
+             <ul>
+                <li>Un arbore cu n noduri are exact n-1 muchii.</li>
+                <li>Arborele este cel mai restâns graf conex care există.</li>
+                <li>Într-u arbore între oricare două noduri distincte există un singur lanț.</li>
+                <li>Într-un arbore există lanț elementar unic între oricare două noduri.</li>
+            </ul>
+             
+             <img src="">
+             <h2>Câteva Exemple</h2>
+             <div class="ex-img">
+                <div>
+                    <img src="./images/arbore-binar-echilibrat.png" alt="arbore binar echilibrat">
+                    <p><a href="tipuri.html#12">arbore-binar-echilibrat</a></p>
+                </div>
+                <div>
+                    <img src="./images/arbore-avl.png" alt="arbore-avl">
+                    <p>arbore-avl</p>
+                </div>
+                <div>
+                    <img src="./images/arbore-binar-de-cautare.png" alt="arbore binar de cautare">
+                    <p>arbore binar de cautare</p>
+                </div>
+                <div class="mai-multe-flex">
+                    <div class="mai-multe"><a href="tipuri.html">mai multe</a></div>
+                </div>
+            </div>
+            <h2 id="2">Arbori cu rădăcină</h2>
+            <p>Sunt grafuri neorientate în care este pus în evidență un nod numit rădăcină care este situat pe nivelul 0.</p>
+            <h3>Alte definiții</h3>
+            <ul>
+             <li>O structură de date arborescentă este o structură ierarhică care este utilizată pentru a reprezenta și organiza datele într-un mod ușor de navigat și de căutat. </li>
+             <li>Este un model abstract care imită structura ierarhică a arborilor naturali. Un arbore are un nod rădăcină, iar fiecare nod are zero sau mai multe noduri copil, formând o structură asemănătoare unui arbore inversat.</li>
+             <li>Arborele este cunoscut și ca o structură de date recursive. Un arbore poate fi definit recursiv, deoarece nodul distinct dintr-o structură de date arborescentă este cunoscut ca nod rădăcină.</li>
+            </ul>
+            <h3>Terminologie și caracteristici</h3>
+                <p>Toate nodurile adiacente rădăcinii sunt numite descendenți direcți(fii) și sunt situate pe nivelul 1( rădăcina fiind considerată tată pentru aceste noduri). Nodurile adiacente nodurilor de pe nivelul 1 în afara celor situate deja în arbore sunt plasate pe nivelul 2, sunt fii sau descendenți direcți ai nodurilor părinte de pe nivelul 1 și sunt descendenți pentru toate nodurile situate pe niveluri anterioare și așa ma departe.</p>
+            <ul>
+                <li>Nodurile care nu au descendenți direcți se numesc noduri terminale sau frunze.</li>
+                <li>Descendent= orice nod de pe nivelurile următoare ale subgrafului(o parte din arbore,cu rădăcina în nodul la care ne referim)</li>
+                <li>Nodurile cu același tată(ascendent direct) se numesc frați.</li>
+                <li>Ascendent= orice nod de pe nivelurile anterioare ale ramuri, pe care ne aflăm(ramura din arbore în care se află nodul de referință)</li>
+                <li>Se numește înălțimea arborelui lungimea celui mai lung lanț de la rădăcină către o frunză sau nivelul maxim din arbore.</li>
+                <li>Se numește arbore nul sau vid arborele care nu are niciun nod.</li>
+            </ul>
+            <h3>Exemple sugestive</h3>
+            <div class="legenda-arb-rad">
+                <img src="./images/arbore-radacina.png" alt="arbore cu radacină">
+                <div>
+                    <h3>Legendă pt arborele din stânga</h3>
+                    <ul>
+                        <li>nodul 3 -este rădăcina arborelui și tată pentru 2,9</li>
+                        <li>nodurile 2 și 9 sunt fii ai lui 3 (2,9-frați)</li>
+                        <li>2 este tată pentru 1,5 și 9 este tată pentru 8,11</li>
+                        <li>nodurile 1 și 5 sunt fii ai lui 2 (1,5-frați)</li>
+                        <li>nodurile 8 și 11 sunt fii ai lui 9 (8,11-frați)</li>
+                        <li>1 este tată pentru 7,10 și 5 este tată pentru 4</li>
+                        <li>4 este tată pentru 6 și 11 este tată pentru 12</li>
+                        <li> nodurile 7,10,8,12 sunt frunze</li>
+                        <li>arborele are înălțimea 4</li>
+                    </ul>
+                </div>
+                <img src="./images/imagine_2024-06-09_190105891-removebg-preview.png" alt="arbore cu radacină">
+            </div>
+            <h2 id="3">Implementarea arborilor</h2>
+            <p>În general, metodele folosite la reprezentarea grafurilor se pot utiliza și la cazurile particulare de grafuri care
+                sunt arborii. De exemplu reprezentarea cu liste de vecini a unui arbore oarecare este o alegere foarte bună,
+                făcându-se economie de memorie în comparație cu reprezentarea arborelui prin matrice de adiacență
+                (arborele are număr de muchii de ordin n, mai exact n-1 iar matricea de adiacență va avea cele mai multe
+                dintre cele n^2 elemente, egale cu 0).</p>
+             <p>Pentru arborii cu rădăcină există și o modalitate de reprezentare care le pune foarte bine în evidență
+                structura. Aceasta se folosește de faptul că fiecare nod are un singur tată, păstrând doar un vector în care pe
+                poziția i se află tatăl nodului i (sau un semn, de regulă 0, decă i este rădăcina). O astfel de structură se
+                numește vector de tați. (Implementarea statică folosind referințe ascendente prin vectorul de tați)
+            </p>
+            <div class="vect-tati">
+                <img src="./images/imagine_2024-06-09_205027108-removebg-preview.png" alt="un arbore">
+                <div>
+                    <h3>Vectorul de tați pentru acest arbore cu rădăcină:</h3>
+                    <img src="./images/imagine_2024-06-09_210400576-removebg-preview.png" alt="tabel vectori de tați">
+                </div>
+            </div>
+            <h3>Informațiile despre arbore din vectorul de tați:</h3>
+            <ul class="lista-vect-tati">
+                <li>--O pereche de forma (i, T[i]), cu T[i] nenul, reprezintă o muchie. Obținem astfel cele n-1 muchii</li>
+                ale arborelui.</li>
+                <li>--Este o singură valoare 0 în vector, cea corespunzătoare poziției care indică rădăcina.</li>
+                <li>--Elementele care nu apar în vectorul de tați sunt frunzele.</li>
+                <li>--Un cod de forma: while (x) {scrie x; x = T[x];} oferă lanțul de la nodul x la rădăcină.</li>
+            </ul>
+        </div>
+
+        <div class="sidebar ">
+
+             <label for="btn" class="drop active">
+                <a href="arbori.html" ><div class="menu-click active">Introducerea</div></a>
+                 <span class="material-symbols-outlined">arrow_drop_down</span>
+             </label>
+            <input type="checkbox" id="btn">
+            <nav class="sub-menu">
+                <a href="#1"><div>Def</div></a>
+                <a href="#2" ><div>Arbori cu rădăcină</div></a>
+                <a href="#3" ><div>Implementare</div></a>
+           </nav>
+           <a href="tipuri.html"><div>Tipuri</div></a>
+            
+            <a href="" ><div>ceva</div></a>
+            <a href="" ><div>altceva</div></a>
+            <a href="tipuri.html"><div>Utilizări</div></a>
+        </div>
+     </div>
+</body>
+</html>
+
+<!-- https://www.mateinfo.net/muscalua/arbori.pdf  pag 17  -->
